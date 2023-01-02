@@ -1,8 +1,8 @@
-package com.example.idcardchecker.Rest.Controllers;
+package com.example.idcardchecker.MVC.Controllers;
 
 
 import com.example.idcardchecker.DataBase.*;
-import com.example.idcardchecker.DeleteService;
+import com.example.idcardchecker.MVC.DeleteService;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
 

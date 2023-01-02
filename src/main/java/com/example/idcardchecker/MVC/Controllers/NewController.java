@@ -1,17 +1,16 @@
-package com.example.idcardchecker.Rest.Controllers;
+package com.example.idcardchecker.MVC.Controllers;
 
 
 import com.example.idcardchecker.Classes.ID_CARD;
 import com.example.idcardchecker.Classes.User;
 import com.example.idcardchecker.DataBase.Insert_Into_DataBase;
 import com.example.idcardchecker.Enums.Nationality;
-import com.example.idcardchecker.NewService;
+import com.example.idcardchecker.MVC.NewService;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.json.*;
 
-import java.sql.Date;
 import java.util.Arrays;
 import java.util.Objects;
 

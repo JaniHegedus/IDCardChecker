@@ -1,4 +1,4 @@
-package com.example.idcardchecker;
+package com.example.idcardchecker.MVC;
 
 import jakarta.ws.rs.HeaderParam;
 import jakarta.ws.rs.core.Response;

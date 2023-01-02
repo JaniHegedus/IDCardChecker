@@ -1,8 +1,8 @@
-package com.example.idcardchecker.Rest.Controllers;
+package com.example.idcardchecker.MVC.Controllers;
 
 
 import com.example.idcardchecker.DataBase.GetObject;
-import com.example.idcardchecker.GetService;
+import com.example.idcardchecker.MVC.GetService;
 import com.example.idcardchecker.DataBase.GetJSON;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
