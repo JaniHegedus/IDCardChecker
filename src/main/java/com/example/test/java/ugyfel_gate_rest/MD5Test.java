@@ -1,4 +1,4 @@
-package com.test.java.ugyfel_gate_rest;
+package com.example.test.java.ugyfel_gate_rest;
 
 import com.example.idcardchecker.Classes.MD5;
 import org.junit.Test;
