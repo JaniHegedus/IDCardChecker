@@ -70,4 +70,17 @@ public class GetObject
         }
         return null;
     }
+    @Nullable
+    public static String getUserbyIdCard(String idcardnumber)
+    {
+        ArrayList<User> users = getDataFromUserTable();
+        for (User user : users)
+        {
+            if(Objects.equals(getID_CARDByUserid(user.getId()).getId_num(), idcardnumber))
+            {
+                return user.getName();
+            }
+        }
+        return null;
+    }
 }

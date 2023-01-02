@@ -1,6 +1,7 @@
 package com.example.idcardchecker.Rest.Controllers;
 
 
+import com.example.idcardchecker.DataBase.GetObject;
 import com.example.idcardchecker.GetService;
 import com.example.idcardchecker.DataBase.GetJSON;
 import jakarta.ws.rs.*;
@@ -59,7 +60,7 @@ public class GetController implements GetService
     @Path("/usere")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getUserDataEmail(@HeaderParam("Email") String email, @HeaderParam("token") String token)
+    public Response getUserDataEmail(@HeaderParam("email") String email, @HeaderParam("token") String token)
     {
         JSONObject resp = new JSONObject();
         try{
@@ -100,8 +101,14 @@ public class GetController implements GetService
     @Path("/idcards")
     public Response getIdCards()
     {
-
         return Response.ok(getJSONIDCards().toString()).type(MediaType.APPLICATION_JSON).build();
     }
-
+    @Override
+    @GET
+    @Produces("text/plain")
+    @Path("/userbyidc")
+    public String getUserbyIdCard(@HeaderParam("idcardnumber") String idcardnumber)
+    {
+        return GetObject.getUserbyIdCard(idcardnumber);
+    }
 }

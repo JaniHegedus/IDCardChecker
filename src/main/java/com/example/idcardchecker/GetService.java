@@ -10,7 +10,9 @@ public interface GetService
     //Path("/usern")
     Response getUserData(@HeaderParam("userName") String username, @HeaderParam("token") String token);
     //Path("/usere")
-    Response getUserDataEmail(@HeaderParam("Email") String email, @HeaderParam("token") String token);
+    Response getUserDataEmail(@HeaderParam("email") String email, @HeaderParam("token") String token);
+    //Path("/userbyidc")
+    String getUserbyIdCard(@HeaderParam("idcardnumber") String idcardnumber);
     //Path("/users")
     Response getUsers();
     //Path("/idcards")
