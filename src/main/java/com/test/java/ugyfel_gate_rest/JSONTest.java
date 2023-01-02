@@ -1,4 +1,4 @@
-package test.java.ugyfel_gate_rest;
+package com.test.java.ugyfel_gate_rest;
 
 import com.example.idcardchecker.Classes.*;
 import com.example.idcardchecker.DataBase.*;
